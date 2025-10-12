@@ -1,0 +1,13 @@
+Manchester Marketplace is a digital platform created by students for students and is a first year team project. The aim was to design a safe, supportive, and community-focused environment for buying and selling within the University of Manchester student community.
+
+Our design process focused on minimalism, clarity, and responsiveness. We researched existing marketplace platforms to guide our approach to the navigation structure, search and filter features, product listings, and review system. The interface emphasised consistency, accessibility, and a clear information hierarchy, ensuring that users could easily navigate and interact with the marketplace across devices.
+
+We built the backend using Supabase, chosen for its PostgreSQL foundation, real-time capabilities, and built-in authentication. Our user-centric database design linked every action—creating listings, making transactions, or leaving reviews—to individual profiles for security and personalisation. Through data normalisation and relational integrity, we ensured scalability and maintainability. Supabase’s Amazon S3–based storage handled image uploads, and row-level security was used to restrict access to authenticated users.
+
+For authentication, we implemented the University of Manchester’s CAS (Central Authentication Service). This single sign-on system ensured a secure and trusted login process exclusive to students, aligning with our vision of a student-only marketplace.
+
+We managed version control using Git and GitLab, following a branching strategy with clear commit messages and pull requests for peer review. Sensitive information such as API keys and Supabase credentials were stored securely in environment variables (.env), excluded from the repository. Dependencies were tracked through package.json, with regular npm audits to ensure performance and security.
+
+We used Jira and weekly stand-up meetings to manage workflow, with a Kanban board to track progress. Our project timeline covered stages from authentication setup to integration and testing.
+
+Planned upgrades included Stripe payment integration, a review system, content moderation tools, and a recommendation algorithm. We also proposed process improvements such as clearer communication norms, shared coding standards, and a mentorship system to enhance team collaboration and learning.
